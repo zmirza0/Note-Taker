@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static('routes'));
 
 app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, '/routes/index.js'))
+  res.sendFile(path.join(__dirname, '/routes/route.js'))
 );
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
